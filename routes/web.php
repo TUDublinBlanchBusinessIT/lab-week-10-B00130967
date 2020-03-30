@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('products/additem/{id}', 'productController@additem')->name('products.additem');
+Route::get('products/emptycart', 'productController@emptycart')->name('products.emptycart');
 
 Route::resource('scorders', 'scorderController');
 
